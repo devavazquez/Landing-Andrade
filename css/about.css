@@ -1,0 +1,266 @@
+.text-properties,
+.first-column,
+.text2 {
+  font-weight: 200;
+}
+
+.container-fluid2 {
+  background-color: rgba(143, 143, 143, 0.048);
+}
+
+@media (max-width: 768px) {
+  .text2 {
+    font-size: 24px;
+    /* Ajusta el tamaño de fuente según sea necesario */
+  }
+
+  .container {
+    /* Ajusta el padding o margin para hacer el cuadro más grande */
+    padding: 20px;
+  }
+}
+
+
+/* Estilo base para el texto */
+.text-forum {
+  font-size: 13px;
+  /* Tamaño de fuente para pantallas pequeñas */
+  margin-bottom: 25px;
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 576px) {
+  .text-forum {
+    font-size: 18px;
+    /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (min-width: 768px) {
+  .text-forum {
+    font-size: 20px;
+    /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (min-width: 992px) {
+  .text-forum {
+    font-size: 22px;
+    /* Tamaño de fuente para pantallas extra grandes */
+  }
+}
+
+.text2 {
+  font-size: 15px;
+  /* Tamaño de fuente para pantallas pequeñas y móviles */
+}
+
+@media (min-width: 768px) {
+  .text2 {
+    font-size: 28px;
+    /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (min-width: 992px) {
+  .text2 {
+    font-size: 20px;
+    /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (min-width: 1200px) {
+  .text2 {
+    font-size: 22px;
+    /* Tamaño de fuente para pantallas extra grandes */
+  }
+}
+
+
+
+
+
+
+
+
+.img-properties {
+  width: 1112px;
+  height: 584px;
+  /* align-content: center; */
+  margin-left: 7%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.about-properties {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.slider-container {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  overflow-x: scroll;
+  align-content: center;
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-type: x mandatory;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  align-content: center;
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-align: center;
+}
+
+.container-slider {
+  width: 10%;
+  margin-top: 5%;
+  margin-left: 150px;
+  align-content: center;
+}
+
+.upper-size {
+  background-color: red;
+  height: 20%;
+}
+
+.columns-margin {
+  margin-top: 5%;
+}
+
+.div {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  font-size: 32px;
+  color: #5c5c5c;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 72px;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 991px) {
+  .div {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}
+
+.div-2 {
+  font-family: Forum, sans-serif;
+  margin: auto 0;
+}
+
+.div-3 {
+  font-family: Forum, sans-serif;
+  background-color: #fff;
+  align-self: stretch;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 76px 53px 50px;
+}
+
+@media (max-width: 991px) {
+  .div-3 {
+    padding: 0 20px;
+  }
+}
+
+.div-4 {
+  font-family: Forum, sans-serif;
+  margin: auto 0;
+}
+
+.div-5 {
+  font-family: Forum, sans-serif;
+  background-color: #fff;
+  align-self: stretch;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: end;
+  padding: 76px 60px 50px;
+}
+
+@media (max-width: 991px) {
+  .div-5 {
+    padding: 0 20px;
+  }
+}
+
+.div-6 {
+  font-family: Forum, sans-serif;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.valores-css {
+  margin-top: 10%;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.text-properties {
+  margin-right: 100px;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.first-column {
+  margin-left: 15%;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.second-column {
+  width: 50%;
+  margin-left: 15%;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.row-properties {
+  text-align: center;
+}
+
+.title-font {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15%;
+  font-family: 'Times New Roman', monospace
+}
+
+.content-font {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+/* @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .right-texts, .dropdown-menu {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+  } */

@@ -1,0 +1,116 @@
+  /* Estilos base */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .btn-center{
+    color: red;
+  }
+  
+  /* Asegurarse de que el texto esté por encima del overlay */
+  .text-above-overlay {
+      z-index: 2; /* Mayor que el z-index del overlay */
+      color: white; /* O el color que prefieras para el texto */
+  }
+  
+  /* Ajustar la imagen para que sea más pequeña en longitud */
+  .custom-img {
+      object-fit: cover; /* Mantiene el aspecto de la imagen */
+      width: 100%; /* Ancho completo */
+      max-height: 850px; /* Ajusta esto según necesites */
+
+  }
+  /* Ajustes generales para el formulario */
+  .nombre-container {
+      border: 2px solid #ccc; /* Bordes en gris claro */
+      padding: 20px; /* Espacio interior */
+      width: 60%; /* Ancho del contenedor */
+      margin: 20px auto; /* Centrado con margen arriba y abajo */
+      background: none; /* Fondo transparente */
+      
+  }
+
+  /* Estilos para etiquetas y campos de entrada */
+  .nombre-container label {
+      display: inline-block; /* Hace que las etiquetas sean en línea */
+      width: 20%; /* Ancho de las etiquetas para alinear los campos de entrada */
+      margin-right: 10px; /* Espacio entre la etiqueta y el campo de entrada */
+      text-align: right; /* Alinea el texto de las etiquetas a la derecha */
+  }
+
+  .nombre-container input[type="text"] {
+      display: inline-block; /* Hace que los campos de entrada sean en línea */
+      width: 65%; /* Ancho de los campos de entrada */
+      margin-bottom: 10px; /* Espacio debajo de cada campo de entrada */
+  }
+
+  /* Estilos para ajustar el formulario y su posición */
+  .formulario-container {
+      width: 30%; /* Ancho del contenedor igual que el de nombre-container */
+      margin: 0 auto;/* Centrado horizontalmente */
+  }
+
+  .formulario-container, .nombre-container {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .formulario-visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .formulario-container textarea {
+      width: calc(95% - 20px); /* Ancho de la text area ajustado al contenedor */
+      margin-left: calc(5% + 10px); /* Alineación a la izquierda con un poco de espacio */
+  }
+
+  .nombre-container button {
+    margin-top: 20px; /* Espaciado superior para separarlo de los campos de texto */
+    margin-left: 30px;
+    padding: 10px 20px; /* Relleno para hacer el botón más grande y cómodo al clicar */
+    border: 1; /* Remover el borde predeterminado */
+    background-color: #ffffff; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
+    cursor: pointer; /* Cambiar el cursor a una mano para indicar que es clickeable */
+    border-radius: 7px; /* Bordes redondeados para el botón */
+    transition: background-color 0.3s;
+    margin-left: 325px;
+    width: 200px; /* Ancho específico */
+    height: 50px; 
+  }
+  
+  .nombre-container button:hover {
+    background-color: #000000;
+    color: #ffffff; /* Cambiar el color de fondo al pasar el mouse para dar feedback visual */
+  }
+
+  
+
+  /* Ajustes para visualización en pantallas más pequeñas */
+  @media (max-width: 768px) {
+      .nombre-container label, .nombre-container input[type="text"] {
+          display: block; /* Los hace de bloque para que ocupen su propia línea en pantallas pequeñas */
+          width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+          margin-right: 0; /* Elimina el margen derecho para etiquetas en pantallas pequeñas */
+      }
+
+      .nombre-container input[type="text"] {
+          margin-left: 10%; /* Ajusta el margen izquierdo para los campos de entrada en pantallas pequeñas */
+          margin-bottom: 10px; /* Espacio debajo de cada campo de entrada */
+      }
+      
+      .formulario-container textarea {
+          width: 90%; /* Ancho completo para la text area en pantallas pequeñas */
+          margin-left: 5%; /* Ajuste de alineación */
+      }
+  }

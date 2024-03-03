@@ -1,0 +1,104 @@
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+    color: #000;
+}
+
+.button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+}
+
+/* Estilo para el contenedor de las tarjetas */
+.row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around; /* Ajusta esto según necesites */
+align-items: flex-start; /* Esto asegura que las tarjetas se alineen correctamente en la parte superior */
+}
+
+.card {
+width: 230px;
+height: 330px;
+perspective: 1000px;
+margin-bottom: 20px; /* Espacio entre las tarjetas si se envuelven */
+}
+
+.card-inner {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.card-front {
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+transform: rotateY(0deg);
+}
+
+.card-back {
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+transform: rotateY(180deg);
+}

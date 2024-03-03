@@ -1,0 +1,33 @@
+.language-button {
+  border: none;
+  background: url('../assets/svg/mx.svg') no-repeat center center;
+  background-size: cover;
+  margin-top: 0%;
+  width: 30px; /* Ajusta el ancho según sea necesario */
+  height: 25px; /* Ajusta la altura según sea necesario */
+  cursor: pointer;
+}
+
+.language-button2 {
+  border: none;
+  background: url('../assets/svg/um.svg') no-repeat center center;
+  background-size: cover;
+  margin-top: 2%;
+  width: 30px; /* Ajusta el ancho según sea necesario */
+  height: 25px; /* Ajusta la altura según sea necesario */
+  cursor: pointer;
+}
+
+.language-button3 {
+    border: none;
+    background: url('../assets/svg/de.svg') no-repeat center center;
+    background-size: cover;
+    margin-top: 0%;
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: 25px; /* Ajusta la altura según sea necesario */
+    cursor: pointer;
+  }
+
+.flags {
+    margin-right: 0.5%;
+}

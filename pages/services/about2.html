@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/HomePage.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- css nativo -->
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/colors.css">
+  <link rel="stylesheet" href="../../css/card.css">
+  <link rel="stylesheet" href="../../css/card-ethics.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <link rel="stylesheet" href="../../css/inf.css">
+  <link rel="stylesheet" href="../../css/social-media.css">
+  <link rel="stylesheet" href="../../sass/services.css">
+  <link rel="stylesheet" href="../../css/flags.css">
+  <link rel="stylesheet" href="../../css/form2.css">
+  <link rel="stylesheet" href="../../css/services.css">
+  <link rel="stylesheet" href="../../css/formulario.css">
+  <link rel="stylesheet" href="../../css/services/tornoCNC.css">
+  <link rel="stylesheet" href="../../css/iziToast.css">
+  <link rel="stylesheet" href="../../css/about.css">
+
+
+  <!-- Social media -->
+  <link rel="stylesheet" href="../../sass/inf.scss">
+  <link rel="stylesheet" href="../../sass/inf.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="icon" href="../../assets/ANDRADE_MKTPLAN_TARJETAS-01-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Andrade</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $('#contactInfo').load('../pages/contactInfo.html');
+    });
+
+    $(document).ready(function () {
+      $('#footer').load('../pages/footer.html');
+    });
+
+    // $(document).ready(function () {
+    //   $('#languaje').load('../pages/languaje.html');
+    // });
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id="languaje"></div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top blue-bar">
+    <div class="container-fluid">
+      <div class="right-texts">
+        <a href="../../pages/homePage.html">
+        <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
+      </a>
+      </div>
+      <div class="right-texts">
+        <a class="right-text bt-atn translatable" href="../../pages/homePage.html">Principal</a>
+        <div class="dropdown">
+          <a class="right-text bt-atn translatable dropdown-toggle" href="#" id="servicesDropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <a class="dropdown-item" href="../services/CNC.html">Maquinados CNC</a>
+            <a class="dropdown-item" href="../services/tornoCNC.html">Maquinados Torno CNC</a>
+            <a class="dropdown-item" href="../services/ingenieriaInversa.html">Ingenieria Inversa</a>
+            <a class="dropdown-item" href="../services/reparacion.html">Reparación y Mantenimiento</a>
+            <a class="dropdown-item" href="../services/rectificado.html">Rectificado y Ajuste</a>
+            <a class="dropdown-item" href="../services/diseno.html">Diseño Mecanico</a>
+            <a class="dropdown-item" href="../services/levantamiento.html">Levantamiento dimensional en sitio</a>
+            <a class="dropdown-item" href="../services/fabricacion.html">Fabricación y producción</a>
+            <a class="dropdown-item" href="../services/electroerosion.html">Electroerosión por hilo y penetración</a>
+            <a class="dropdown-item" href="../services/generado.html">Generado y reparación de engranes</a>
+            <a class="dropdown-item" href="../services/soldadura.html">Soldadura y pailería</a>
+          </div>
+        </div>
+        <a class="right-text bt-atn translatable" href="./about2.html">Sobre Nosotros</a>
+        <a class="right-text bt-atn translatable" href="../form.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <style>
+    .subtitle-text {
+      font-size: 130%;
+    }
+  </style>
+
+
+
+  <div class="contenido" id="home">
+    <div class="position-relative">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="img-1">
+            <!-- Imagen Original -->
+            <img src="../../assets/pics andradre /cnc_1200x420.jpg"
+              class="heigth-100-vh d-block w-100 custom-img" alt="...">
+            <!-- Overlay Negro -->
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Asegurarse de que el texto esté posicionado para aparecer por encima del overlay -->
+      <div class="position-absolute top-50 start-50 translate-middle text-above-overlay">
+        <div class="text-center">
+          <h1 class="text-uppercase title translatable">SOBRE NOSOTROS</h1>
+        </div>
+        <div class="center">
+          <div class="justify-text width-100">
+            <p class=" text-forum  text-justify translatable"  >
+              Somos una empresa mexicana enfocada a la
+              solución de problemas de ingeniería en el
+              ramo metal-mecánico, con maquinaria, equipo
+              y personal técnico calificado para cumplir a
+              nuestros clientes el servicio en el mejor tiempo
+              requerido, con la calidad que nos caracteriza
+              por excelencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <style>
+    .text-properties,
+    .first-column, 
+    .text2 {
+      font-weight: 200;
+    }
+
+    .container-fluid2 {
+      background-color: rgba(143, 143, 143, 0.048);
+    }
+
+    @media (max-width: 768px) {
+      .text2 {
+        font-size: 24px; 
+      }
+      .container {
+        
+        padding: 20px;
+      }
+    }
+    
+    .text-forum {
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: 576px) {
+      .text-forum {
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .text-forum {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .text-forum {
+        font-size: 22px;
+      }
+    }
+
+    .text2 {
+      font-size: 15px;
+    }
+
+    @media (min-width: 768px) {
+      .text2 {
+        font-size: 28px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .text2 {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .text2 {
+        font-size: 22px;
+      }
+    }    
+    
+  </style> -->
+
+  <div class="container-fluid columns-margin">
+    <div class="row row-properties">
+      <div class="col-12 col-md-6 text-center text-md-left">
+        <img class="second-column rounded d-none d-md-block" loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/ima../ge/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/13bb2cf27f2618cf4eec3abbd63b14fad83c3dbc88c3e037688d72a10f4e72c7?apiKey=fef55b62408b45c0bae8f11f38c39234&"
+          class="w-full aspect-[0.93] max-w-[473px]" />
+
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-left">
+        <h3>MISIÓN</h3>
+        <div class="container justify-text">
+          <p class="text2 line forum size-20">
+            Ofrecer soluciones de maquinado
+            principalmente a empresas de ramo
+            industrial automotriz, construcción,
+            forja y de reparación de maquinaria
+            de gran tamaño, lo hacemos con
+            tecnología innovadora en máquinas y
+            software a través personal calificado
+            y experimentado, ofreciendo rapidez,
+            honradez y responsabilidad en la
+            entrega del servicio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid columns-margin">
+    <div class="row row-properties">
+      <div class="col-12 col-md-6 text-center text-md-left">
+        <img class="second-column rounded d-none d-md-block" loading="lazy"
+          srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/adf7c54e9b8145975bd91620b97f120e32d2f8ee097745418293d572a3fd0150?apiKey=fef55b62408b45c0bae8f11f38c39234&"
+          class="w-full aspect-[0.93] max-w-[473px]" />
+
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-left">
+        <h3>VISIÓN</h3>
+        <div class="container justify-text">
+          <p class="text2 line forum size-20">
+            Ser una empresa consolidada y fuerte, con base a la experiencia, conocimiento y formación de
+            todos sus colaboradores para resolver los objetivos de una manera eficiente.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="valores-css">
+    <div class="col-12">
+      Valores
+    </div>
+  </div>
+
+  <div >
+    <div >
+      <div class="div">
+        <div class="div-2">LEALTAD</div>
+        <div class="div-3">RESPONSABILIDAD</div>
+        <div class="div-4">RESPETO</div>
+        <div class="div-5">HONESTIDAD</div>
+        <div class="div-6">DISCIPLINA</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-yellow centrar-div" id="contactInfo"></div>
+
+  <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+    integrity="sha384-9SNQ9aaM8eCv60vZ3Zke8d4T9n7f2fumjD6hP6EkHXCuQLU/G/yBKFO1dGRR95jZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownToggle = document.querySelector('.dropdown-toggle');
+        var dropdownMenu = document.querySelector('.dropdown-menu');
+  
+        dropdownToggle.addEventListener('click', function () {
+          dropdownMenu.classList.toggle('show');
+        });
+  
+        document.addEventListener('click', function (event) {
+          if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+            dropdownMenu.classList.remove('show');
+          }
+        });
+      });
+  
+    </script>
+
+  <script src="../js/translate.js"></script>
+  <script src="../js/sendEmail.js"></script>
+  <script src="../../js/validator.js"></script>
+  <script src="../js/dropdown.js"></script>
+  <script src="../js/visible.js"></script>
+  <script src="../js/reload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+
+</body>
+
+</html>

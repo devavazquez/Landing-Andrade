@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/HomePage.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- css nativo -->
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/colors.css">
+  <link rel="stylesheet" href="../../css/card.css">
+  <link rel="stylesheet" href="../../css/card-ethics.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <link rel="stylesheet" href="../../css/inf.css">
+  <link rel="stylesheet" href="../../css/social-media.css">
+  <link rel="stylesheet" href="../../sass/services.css">
+  <link rel="stylesheet" href="../../css/flags.css">
+  <link rel="stylesheet" href="../../css/form2.css">
+  <link rel="stylesheet" href="../../css/services.css">
+  <!-- <link rel="stylesheet" href="../../css/formulario.css"> -->
+  <link rel="stylesheet" href="../../css/services/tornoCNC.css">
+
+
+  <!-- Social media -->
+  <link rel="stylesheet" href="../../sass/inf.scss">
+  <link rel="stylesheet" href="../../sass/inf.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="icon" href="../../assets/ANDRADE_MKTPLAN_TARJETAS-01-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <title>Andrade</title>
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top blue-bar">
+    <div class="container-fluid">
+      <div class="right-texts">
+        <a href="../../pages/homePage.html">
+        <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
+      </a>
+      </div>
+      <div class="right-texts">
+        <a class="right-text bt-atn translatable" href="../../pages/homePage.html">Principal</a>
+        <div class="dropdown">
+          <a class="right-text bt-atn translatable dropdown-toggle" href="#" id="servicesDropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <a class="dropdown-item" href="./CNC.html">Maquinados CNC</a>
+            <a class="dropdown-item" href="./tornoCNC.html">Maquinados Torno CNC</a>
+            <a class="dropdown-item" href="./ingenieriaInversa.html">Ingenieria Inversa</a>
+            <a class="dropdown-item" href="./reparacion.html">Reparación y Mantenimiento</a>
+            <a class="dropdown-item" href="./rectificado.html">Rectificado y Ajuste</a>
+            <a class="dropdown-item" href="./diseno.html">Diseño Mecanico</a>
+            <a class="dropdown-item" href="./levantamiento.html">Levantamiento dimensional en sitio</a>
+            <a class="dropdown-item" href="./fabricacion.html">Fabricación y producción</a>
+            <a class="dropdown-item" href="./electroerosion.html">Electroerosión por hilo y penetración</a>
+            <a class="dropdown-item" href="./generado.html">Generado y reparación de engranes</a>
+            <a class="dropdown-item" href="./soldadura.html">Soldadura y pailería</a>
+          </div>
+        </div>
+        <a class="right-text bt-atn translatable" href="./about2.html">Sobre Nosotros</a>
+        <a class="right-text bt-atn translatable" href="../form.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <nav class="fixed-top mt-5 text-end">
+    <div class="flags">
+      <button class="language-button2" onclick="changeLanguage('en')"></button>
+      <br>
+      <button class="language-button" onclick="changeLanguage('es')"></button>
+      <br>
+      <button class="language-button3" onclick="changeLanguage('de')"></button>
+    </div>
+  </nav> -->
+
+  <style>
+    .title2 {
+      margin-top: 50px;
+      font-size: 70px;
+      text-align: center;
+      color: white;
+      font-family: 'Lalezar', system-ui;
+      letter-spacing: 5px;
+    }
+
+    .subtitle-text2 {
+      /* font-size: 20; */
+      color: white;
+      font-size: 19px;
+
+    }
+
+    .img-properties {
+      width: 1112px;
+      height: 584px;
+      /* align-content: center; */
+      margin-left: 7%;
+      margin-bottom: 10%;
+    }
+
+  </style>
+
+  <div class="contenido" id="home">
+    <div class="position-relative">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="img-1">
+            <!-- Imagen Original -->
+            <img src="../../assets/gettyimages-964716698.jpg" class="d-block w-100 custom-img" alt="...">
+            <!-- Overlay Negro -->
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Asegurarse de que el texto esté posicionado para aparecer por encima del overlay -->
+      <div class="position-absolute top-50 start-50 translate-middle text-above-overlay">
+        <div class="text-center">
+          <h1 class="text-uppercase title2 translatable">RECTIFICADO Y AJUSTE</h1>
+        </div>
+        <div class="center">
+          <div class="justify-text width-100">
+            <p class=" text-forum  text-justify translatable" style="font-size: 180%;">
+              Tenemos un área para rectificado y
+              ajuste de aceros y aluminios, que
+              cuenta con una gama de máquinas para
+              proporcionar soluciones de rectificado
+              precisas, confiables, flexibles y
+              productivas para una variedad de
+              aplicaciones cilíndricas o planas,
+              obteniendo superficies con un grado de
+              terminación superficial, exactitud de
+              forma geométrica y precisión
+              dimensional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-5 pt-5">
+    <div class="container ">
+
+      <div class="row">
+        <div class="col-sm-6 border-r justify-text">
+          <h4>Se realiza:</h4>
+          
+          <div class="forum heigth-50 line width-50   ">
+            Servicios de ajuste, donde nos encargamos de realizar las modificaciones necesarias para 
+            garantizar el funcionamiento óptimo de los componentes. Ya sea ajustando dimensiones, eliminando imperfecciones 
+            o realizando acabados finales, nuestro equipo está comprometido con alcanzar los más altos estándares de calidad 
+            en cada proyecto.
+          </div>
+        </div>
+        <div class="col-sm-6 justify-text">
+          <div class="forum heigth-50 line width-50 float-end">
+          <h4 class="text-start">Contamos con:</h4>
+          Experiencia para rectificar superficies planas, cilíndricas o de formas complejas, nuestro equipo cuenta con la experiencia y 
+          los recursos necesarios para cumplir con tus requerimientos más exigentes. Nos comprometemos a ofrecer soluciones 
+          precisas, eficientes y rentables que optimicen el rendimiento y la durabilidad de tus componentes.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- carousel -->
+
+  <div class="container">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../../assets/rectificado2.jpeg" class="img-properties" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../../assets/rectificado1.jpeg" class="img-properties" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/rectificado3.jpeg" class="img-properties" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <footer class="bg-yellow centrar-div">
+
+    <div class="social-links">
+      <div id="twitter" class="social-btn flex-center">
+        <!-- <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+          </path>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+        </svg>
+        <span>@Andrade</span>
+      </div>
+
+      <div id="linkedin" class="social-btn flex-center">
+        <!-- <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z">
+          </path>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+        </svg>
+        <span>AndradeMex</span>
+      </div>
+
+      <div id="github" class="social-btn flex-center">
+        <!-- <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+          </path> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+        </svg>
+        </svg><span>2229475849</span>
+      </div>
+
+      <div id="github" class="social-btn flex-center">
+        <!-- <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+          </path> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+        </svg>
+        </svg><span>2229475850</span>
+      </div>
+
+      <div id="github" class="social-btn flex-center">
+        <!-- <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+          </path> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+        </svg>
+        </svg><span>2222346289</span>
+      </div>
+
+      <div id="github" class="social-btn flex-center">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+        </svg>
+        <span>ventas@andrademex.com</span>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!-- inf. desing -->
+  <footer class="bg-blue centrar-div">
+    <div class="container-fluid text-start centrar-di">
+      <div class="row b">
+        <div class="col-sm ">
+          <p class="color-white height center-left width float-start">Copyright ©2024; Designed by Andrade</p>
+        </div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">
+
+          <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" id="logo" class="float-end" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+    integrity="sha384-9SNQ9aaM8eCv60vZ3Zke8d4T9n7f2fumjD6hP6EkHXCuQLU/G/yBKFO1dGRR95jZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdownToggle = document.querySelector('.dropdown-toggle');
+      var dropdownMenu = document.querySelector('.dropdown-menu');
+
+      dropdownToggle.addEventListener('click', function () {
+        dropdownMenu.classList.toggle('show');
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+          dropdownMenu.classList.remove('show');
+        }
+      });
+    });
+
+  </script>
+
+
+  <script src="../js/translate.js"></script>
+  <script src="../js/sendEmail.js"></script>
+  <!-- <script src="../js/loader.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/HomePage.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- css nativo -->
+  <link rel="stylesheet" href=".././css/index.css">
+  <link rel="stylesheet" href=".././css/colors.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/card-ethics.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/inf.css">
+  <link rel="stylesheet" href="../css/social-media.css">
+  <link rel="stylesheet" href="../sass/services.css">
+  <link rel="stylesheet" href="../css/flags.css">
+  <!-- <link rel="styleshett" href="../css/loader.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+  <!-- Social media -->
+  <link rel="stylesheet" href="../sass/inf.scss">
+  <link rel="stylesheet" href="../sass/inf.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="icon" href="../assets/ANDRADE_MKTPLAN_TARJETAS-01-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <title>Andrade</title>
+
+
+</head>
+
+
+<body>
+  <div class="loader"></div> 
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top blue-bar">
+    <div class="container-fluid">
+      <div class="right-texts">
+
+        <img src="../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
+      </div>
+      <div class="right-texts">
+        <a class="right-text bt-atn translatable" href="#home">Home</a>
+        <a class="right-text bt-atn translatable" href="#services">Services</a>
+        <a class="right-text bt-atn translatable" href="#about">About Us</a>
+        <a class="right-text bt-atn translatable" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="fixed-top mt-5 text-end">
+    <div class="flags">
+      <button class="language-button2" onclick="changeLanguage('en')"></button>
+      <br>
+      <button class="language-button" onclick="changeLanguage('es')"></button>
+      <br>
+      <button class="language-button3" onclick="changeLanguage('de')"></button>
+    </div>
+  </nav>
+
+    <style>
+        /* CSS nativo */
+.animation-container {
+    position: relative;
+    height: 100px; /* Ajusta la altura según tu diseño */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+  }
+  
+  .animated-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem; /* Tamaño del texto */
+    color: #000000; /* Color del texto */
+    animation: slideUp 1s ease-out; /* Nombre de la animación y duración */
+    letter-spacing: 15px;
+    font-weight: 700;
+    font-family: "Protest Strike", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: colorChange 5s infinite alternate, moveText 2s infinite alternate;
+
+    
+
+  }
+
+  @keyframes colorChange {
+    from {
+      color: #000000;
+    }
+    to {
+      color: #323237;
+    }
+  }
+  
+  @keyframes moveText {
+    from {
+      transform: translate(-50%, -50%);
+    }
+    to {
+      transform: translate(-50%, -45%);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translate(-50%, 100%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px; /* Espacio entre el texto "Nuestros Servicios" y las imágenes */
+  }
+  
+  .service {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre cada servicio */
+  }
+  
+  .service img {
+    width: 200px; /* Tamaño de las imágenes */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .service h2 {
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+    font-size: 1.5rem; /* Tamaño del título */
+  }
+  
+  .service p {
+    margin-top: 5px; /* Espacio entre el título y el texto */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+  }
+  
+  
+    </style>
+
+  <div class="animation-container">
+    <h1 class="animated-text">Nuestros Servicios</h1>
+  </div>
+  
+  <div class="services-container">
+    <div class="service">
+      <img src="../assets/pics andradre /IMG_0990.JPG" alt="Servicio 1">
+      <h2>Servicio 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in mauris vitae elit tristique pretium.</p>
+    </div>
+    <div class="service">
+      <img src="../assets/pics andradre /IMG_0990.JPG" alt="Servicio 2">
+      <h2>Servicio 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in mauris vitae elit tristique pretium.</p>
+    </div>
+    <div class="service">
+      <img src="../assets/pics andradre /IMG_0990.JPG" alt="Servicio 3">
+      <h2>Servicio 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in mauris vitae elit tristique pretium.</p>
+    </div>
+  </div>
+  
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+integrity="sha384-9SNQ9aaM8eCv60vZ3Zke8d4T9n7f2fumjD6hP6EkHXCuQLU/G/yBKFO1dGRR95jZ"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+
+</html>
