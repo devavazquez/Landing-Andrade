@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambiar Idioma</title>
+  <script>
+    function cambiarIdioma(idioma) {
+      // Objeto con las traducciones
+      var traducciones = {
+        'es': {
+          'bienvenido': 'Bienvenido',
+          'texto': 'Texto en español.'
+        },
+        'en': {
+          'bienvenido': 'Welcome',
+          'texto': 'Text in English.'
+        }
+      };
+
+      // Cambiar el idioma de los elementos con la clase "idioma-cambiable"
+      var elementos = document.querySelectorAll('.idioma-cambiable');
+      elementos.forEach(function(elemento) {
+        var clave = elemento.dataset.clave; // Obtiene la clave de traducción del atributo "data-clave"
+        if (traducciones[idioma][clave]) { // Verifica si existe una traducción para la clave en el idioma seleccionado
+          elemento.textContent = traducciones[idioma][clave]; // Asigna la traducción al elemento
+        }
+      });
+
+      // Cambiar el atributo "lang" del HTML
+      document.documentElement.lang = idioma;
+    }
+  </script>
+</head>
+<body>
+  <h1 class="idioma-cambiable" data-clave="bienvenido">Bienvenido</h1>
+  <button onclick="cambiarIdioma('es')">Español</button>
+  <button onclick="cambiarIdioma('en')">Inglés</button>
+  <p class="idioma-cambiable" data-clave="texto">Texto en el idioma seleccionado.</p>
+</body>
+</html>
