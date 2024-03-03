@@ -48,35 +48,31 @@
   <script>
 
     $(document).ready(function () {
-      $('#importaciones').load('importaciones.html');
+      $('#languaje').load('./content/languaje.html');
     });
 
     $(document).ready(function () {
-      $('#languaje').load('languaje.html');
+      $('#menu').load('../pages/dropdown/menu.html');
     });
 
     $(document).ready(function () {
-      $('#menu').load('./services/menu.html');
+      $('#carousel').load('./content/carousel.html');
     });
 
     $(document).ready(function () {
-      $('#carousel').load('carousel.html');
+      $('#aboutHome').load('./content/aboutHome.html');
     });
 
     $(document).ready(function () {
-      $('#aboutHome').load('aboutHome.html');
+      $('#ubicacion').load('./content/ubicacion.html');
     });
 
     $(document).ready(function () {
-      $('#ubicacion').load('ubicacion.html');
+      $('#contactInfo').load('./content/contactInfo.html');
     });
 
     $(document).ready(function () {
-      $('#contactInfo').load('contactInfo.html');
-    });
-
-    $(document).ready(function () {
-      $('#footer').load('footer.html');
+      $('#footer').load('./content/footer.html');
     });
 
     function changeLanguage(languaje) {
@@ -104,13 +100,13 @@
           'electroMenu': 'Electroerosión por hilo y penetración',
           'generatedMenu': 'Generado y reparación de engranes',
           'weldingMenu': 'Soldadura y pailería',
-          'wave1':'Mecanizado',
-          'wave2':'Calidad',
-          'wave3':'Tecnologia',
-          'waveI1':'Nos esforzamos por la excelencia en cada paso del proceso de mecanizado, desde la planificación hasta la ejecución, asegurando piezas con tolerancias ajustadas y acabados de calidad excepcional.',
-          'waveI2':'Nuestra dedicación con excelencia en el mecanizado se refleja en nuestras hojas de proceso que garantiza la rastreabilidad de las piezas. así como la inspección dimensional.Contamos con equipo de medicion,certificado y calidad.',
-          'waveI3':'Nos mantenemos a la vanguardia de la tecnología de mecanizado con de 5000 m2 de espacio y maquinaria CNC, que incluye tanto centros de mecanizado vertical como horizontal.',
-          
+          'wave1': 'Mecanizado',
+          'wave2': 'Calidad',
+          'wave3': 'Tecnologia',
+          'waveI1': 'Nos esforzamos por la excelencia en cada paso del proceso de mecanizado, desde la planificación hasta la ejecución, asegurando piezas con tolerancias ajustadas y acabados de calidad excepcional.',
+          'waveI2': 'Nuestra dedicación con excelencia en el mecanizado se refleja en nuestras hojas de proceso que garantiza la rastreabilidad de las piezas. así como la inspección dimensional.Contamos con equipo de medicion,certificado y calidad.',
+          'waveI3': 'Nos mantenemos a la vanguardia de la tecnología de mecanizado con de 5000 m2 de espacio y maquinaria CNC, que incluye tanto centros de mecanizado vertical como horizontal.',
+
         },
         'en': {
           'companyName': 'The Machining Company',
@@ -134,12 +130,12 @@
           'electroMenu': 'Wire and penetration EDM',
           'generatedMenu': 'Generation and repair of gears',
           'weldingMenu': 'Welding',
-          'wave1':'Machining',
-          'wave2':'Quality',
-          'wave3':'Technology',
-          'waveI1':'We strive for excellence in every step of the machining process, from planning to execution, ensuring parts with tight tolerances and exceptional quality finishes.',
-          'waveI2':'Our dedication to machining excellence is reflected in our process sheets that ensure part traceability. as well as dimensional inspection. We have measuring equipment, certificate and quality.',
-          'waveI3':'We remain at the forefront of machining technology with 5000 m2 of space and CNC machinery, including both vertical and horizontal machining centers.',
+          'wave1': 'Machining',
+          'wave2': 'Quality',
+          'wave3': 'Technology',
+          'waveI1': 'We strive for excellence in every step of the machining process, from planning to execution, ensuring parts with tight tolerances and exceptional quality finishes.',
+          'waveI2': 'Our dedication to machining excellence is reflected in our process sheets that ensure part traceability. as well as dimensional inspection. We have measuring equipment, certificate and quality.',
+          'waveI3': 'We remain at the forefront of machining technology with 5000 m2 of space and CNC machinery, including both vertical and horizontal machining centers.',
         }
 
       };
@@ -169,18 +165,6 @@
 
   <div id="languaje"></div>
 
-  <!-- <button id="translateBtn">Traducir a Español</button> -->
-
-  <!-- <nav class="fixed-top mt-5 text-end">
-    <div class="flags">
-      <button class="language-button2" id="translateBtn" onclick="changeLanguage('en')"></button>
-      <br>
-      <button class="language-button" id="translateBtn" onclick="changeLanguage('es')"></button>
-      <br>
-      <button class="language-button3" onclick="changeLanguage('de')"></button>
-    </div>
-  </nav> -->
-
   <nav class="navbar fixed-top blue-bar">
     <div class="container-fluid">
       <div class="right-texts">
@@ -190,14 +174,15 @@
       <div class="right-texts">
         <a class="right-text bt-atn languaje-translatable" data-key="home" href="#home">Principal</a>
         <div class="dropdown">
-          <a class="right-text bt-atn languaje-translatable dropdown-toggle" data-key="services" href="#" id="servicesDropdown" role="button"
-            aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <a class="right-text bt-atn languaje-translatable dropdown-toggle" data-key="services" href="#"
+            id="servicesDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu" aria-labelledby="servicesDropdown">
             <div id="menu"></div>
           </div>
         </div>
-        <a class="right-text bt-atn languaje-translatable" data-key="about" href="../pages/services/about2.html">Sobre Nosotros</a>
-        <a class="right-text bt-atn languaje-translatable" data-key="contact" href="./form.html">Contacto</a>
+        <a class="right-text bt-atn languaje-translatable" data-key="about" href="../pages/content/about.html">Sobre
+          Nosotros</a>
+        <a class="right-text bt-atn languaje-translatable" data-key="contact" href="./content/form.html">Contacto</a>
       </div>
     </div>
   </nav>
@@ -211,6 +196,7 @@
   <div class="bg-yellow centrar-div" id="contactInfo"></div>
 
   <div id="footer"></div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var dropdownToggle = document.querySelector('.dropdown-toggle');

@@ -43,6 +43,24 @@
 
   <title>Andrade</title>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('#menu').load('../dropdown/menu.html');
+    });
+
+    $(document).ready(function () {
+      $('#contactInfo').load('../contactInfo.html');
+    });
+
+    $(document).ready(function () {
+      $('#footer').load('../footer.html');
+    });
+
+  </script>
+
 
 </head>
 
@@ -52,31 +70,21 @@
   <nav class="navbar fixed-top blue-bar">
     <div class="container-fluid">
       <div class="right-texts">
-        <a href="../../pages/homePage.html">
-        <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
-      </a>
+        <a href="../../pages/index.html">
+          <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
+        </a>
       </div>
       <div class="right-texts">
-        <a class="right-text bt-atn translatable" href="../../pages/homePage.html">Principal</a>
+        <a class="right-text bt-atn translatable" href="../../pages/index.html">Principal</a>
         <div class="dropdown">
           <a class="right-text bt-atn translatable dropdown-toggle" href="#" id="servicesDropdown" role="button"
             aria-haspopup="true" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <a class="dropdown-item" href="./CNC.html">Maquinados CNC</a>
-            <a class="dropdown-item" href="./tornoCNC.html">Maquinados Torno CNC</a>
-            <a class="dropdown-item" href="./ingenieriaInversa.html">Ingenieria Inversa</a>
-            <a class="dropdown-item" href="./reparacion.html">Reparación y Mantenimiento</a>
-            <a class="dropdown-item" href="./rectificado.html">Rectificado y Ajuste</a>
-            <a class="dropdown-item" href="./diseno.html">Diseño Mecánico</a>
-            <a class="dropdown-item" href="./levantamiento.html">Levantamiento dimensional en sitio</a>
-            <a class="dropdown-item" href="./fabricacion.html">Fabricación y producción</a>
-            <a class="dropdown-item" href="./electroerosion.html">Electroerosión por hilo y penetración</a>
-            <a class="dropdown-item" href="./generado.html">Generado y reparación de engranes</a>
-            <a class="dropdown-item" href="./soldadura.html">Soldadura y pailería</a>
+            <div id="menu"></div>
           </div>
         </div>
-        <a class="right-text bt-atn translatable" href="./about2.html">Sobre Nosotros</a>
-        <a class="right-text bt-atn translatable" href="../form.html">Contacto</a>
+        <a class="right-text bt-atn translatable" href="../content/about.html">Sobre Nosotros</a>
+        <a class="right-text bt-atn translatable" href="../content/form.html">Contacto</a>
       </div>
     </div>
   </nav>
@@ -115,7 +123,6 @@
       margin-left: 7%;
       margin-bottom: 10%;
     }
-
   </style>
 
   <div class="contenido" id="home">
@@ -159,15 +166,23 @@
       <div class="row">
         <div class="col-sm-6 border-r justify-text">
           <h4>Se realiza:</h4>
-          
+
           <div class="forum heigth-50 line width-50   ">
-            Una amplia gama de servicios de ingeniería y diseño mecánico para la industria. Desde el diseño conceptual hasta la gestión de proyectos, nuestro equipo altamente calificado se especializa en proporcionar soluciones innovadoras y eficientes. Realizamos análisis detallados, ofrecemos diseño conceptual y detallado, ingeniería inversa, y gestionamos proyectos de principio a fin. Además, brindamos asesoramiento técnico especializado en cualquier etapa del proceso. Con un enfoque en la calidad y la satisfacción del cliente, nos comprometemos a llevar su visión a la realidad con profesionalismo y excelencia técnica.
+            Una amplia gama de servicios de ingeniería y diseño mecánico para la industria. Desde el diseño conceptual
+            hasta la gestión de proyectos, nuestro equipo altamente calificado se especializa en proporcionar soluciones
+            innovadoras y eficientes. Realizamos análisis detallados, ofrecemos diseño conceptual y detallado,
+            ingeniería inversa, y gestionamos proyectos de principio a fin. Además, brindamos asesoramiento técnico
+            especializado en cualquier etapa del proceso. Con un enfoque en la calidad y la satisfacción del cliente,
+            nos comprometemos a llevar su visión a la realidad con profesionalismo y excelencia técnica.
           </div>
         </div>
         <div class="col-sm-6 justify-text">
           <div class="forum heigth-50 line width-50 float-end">
-          <h4 class="text-start">Contamos con:</h4>
-            Nos enorgullecemos de contar con un equipo altamente capacitado y experimentado en el campo de la ingeniería y diseño mecánico. Nuestros ingenieros y diseñadores poseen un profundo conocimiento en una amplia gama de disciplinas, lo que nos permite ofrecer soluciones innovadoras y de alta calidad para tus proyectos industriales.
+            <h4 class="text-start">Contamos con:</h4>
+            Nos enorgullecemos de contar con un equipo altamente capacitado y experimentado en el campo de la ingeniería
+            y diseño mecánico. Nuestros ingenieros y diseñadores poseen un profundo conocimiento en una amplia gama de
+            disciplinas, lo que nos permite ofrecer soluciones innovadoras y de alta calidad para tus proyectos
+            industriales.
           </div>
         </div>
       </div>

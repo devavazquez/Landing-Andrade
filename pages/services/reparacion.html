@@ -42,6 +42,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <title>Andrade</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('#menu').load('../dropdown/menu.html');
+    });
+
+    $(document).ready(function () {
+      $('#contactInfo').load('../contactInfo.html');
+    });
+
+    $(document).ready(function () {
+      $('#footer').load('../footer.html');
+    });
+
+  </script>
 
 
 </head>
@@ -52,31 +69,21 @@
   <nav class="navbar fixed-top blue-bar">
     <div class="container-fluid">
       <div class="right-texts">
-        <a href="../../pages/homePage.html">
-        <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
-      </a>
+        <a href="../../pages/index.html">
+          <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
+        </a>
       </div>
       <div class="right-texts">
-        <a class="right-text bt-atn translatable" href="../../pages/homePage.html">Principal</a>
+        <a class="right-text bt-atn translatable" href="../../pages/index.html">Principal</a>
         <div class="dropdown">
           <a class="right-text bt-atn translatable dropdown-toggle" href="#" id="servicesDropdown" role="button"
             aria-haspopup="true" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <a class="dropdown-item" href="./CNC.html">Maquinados CNC</a>
-            <a class="dropdown-item" href="./tornoCNC.html">Maquinados Torno CNC</a>
-            <a class="dropdown-item" href="./ingenieriaInversa.html">Ingenieria Inversa</a>
-            <a class="dropdown-item" href="./reparacion.html">Reparación y Mantenimiento</a>
-            <a class="dropdown-item" href="./rectificado.html">Rectificado y Ajuste</a>
-            <a class="dropdown-item" href="./diseno.html">Diseño Mecanico</a>
-            <a class="dropdown-item" href="./levantamiento.html">Levantamiento dimensional en sitio</a>
-            <a class="dropdown-item" href="./fabricacion.html">Fabricación y producción</a>
-            <a class="dropdown-item" href="./electroerosion.html">Electroerosión por hilo y penetración</a>
-            <a class="dropdown-item" href="./generado.html">Generado y reparación de engranes</a>
-            <a class="dropdown-item" href="./soldadura.html">Soldadura y pailería</a>
+            <div id="menu"></div>
           </div>
         </div>
-        <a class="right-text bt-atn translatable" href="./about2.html">Sobre Nosotros</a>
-        <a class="right-text bt-atn translatable" href="../form.html">Contacto</a>
+        <a class="right-text bt-atn translatable" href="../content/about.html">Sobre Nosotros</a>
+        <a class="right-text bt-atn translatable" href="../content/form.html">Contacto</a>
       </div>
     </div>
   </nav>

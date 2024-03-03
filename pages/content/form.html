@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/HomePage.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../../css/HomePage.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- css nativo -->
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/colors.css">
+  <link rel="stylesheet" href="../../css/card.css">
+  <link rel="stylesheet" href="../../css/card-ethics.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <link rel="stylesheet" href="../../css/inf.css">
+  <link rel="stylesheet" href="../../css/social-media.css">
+  <link rel="stylesheet" href="../../sass/services.css">
+  <link rel="stylesheet" href="../../css/flags.css">
+  <link rel="stylesheet" href="../../css/form2.css">
+  <link rel="stylesheet" href="../../css/services.css">
+  <link rel="stylesheet" href="../../css/formulario.css">
+  <link rel="stylesheet" href="../../css/services/tornoCNC.css">
+  <link rel="stylesheet" href="../../css/iziToast.css">
+
+
+
+  <!-- Social media -->
+  <link rel="stylesheet" href="../../sass/inf.scss">
+  <link rel="stylesheet" href="../../sass/inf.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="icon" href="../../assets/ANDRADE_MKTPLAN_TARJETAS-01-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <title>Andrade</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('#menu').load('../dropdown/menu.html');
+    });
+
+    $(document).ready(function () {
+      $('#contactInfo').load('../content/contactInfo.html');
+    });
+
+    $(document).ready(function () {
+      $('#footer').load('../content/footer.html');
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdownToggle = document.querySelector('.dropdown-toggle');
+      var dropdownMenu = document.querySelector('.dropdown-menu');
+
+      dropdownToggle.addEventListener('click', function () {
+        dropdownMenu.classList.toggle('show');
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
+          dropdownMenu.classList.remove('show');
+        }
+      });
+    });
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top blue-bar">
+    <div class="container-fluid">
+      <div class="right-texts">
+        <a href="../index.html">
+          <img src="../../assets/ANDRADE_MKTPLAN_BRANDING-02.png" alt="Logo" id="logo">
+        </a>
+      </div>
+      <div class="right-texts">
+        <a class="right-text bt-atn translatable" href="../../pages/index.html">Principal</a>
+        <div class="dropdown">
+          <a class="right-text bt-atn translatable dropdown-toggle" href="#" id="servicesDropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">Servicios</a>
+          <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <div id="menu"></div>
+          </div>
+        </div>
+        <a class="right-text bt-atn translatable" href="about.html">Sobre Nosotros</a>
+        <a class="right-text bt-atn translatable" href="form.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav class="fixed-top mt-5 text-end">
+    <div class="flags">
+      <button class="language-button2" onclick="changeLanguage('en')"></button>
+      <br>
+      <button class="language-button" onclick="changeLanguage('es')"></button>
+      <br>
+      <button class="language-button3" onclick="changeLanguage('de')"></button>
+    </div>
+  </nav> -->
+
+  <div class="contenido" id="home">
+    <div class="position-relative">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="img-1">
+            <!-- Imagen Original -->
+            <img src="../../assets/pics andradre /cnc_1200x420.jpg" class=" heigth-100-vh d-block w-100 custom-img"
+              alt="...">
+            <!-- Overlay Negro -->
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Asegurarse de que el texto esté posicionado para aparecer por encima del overlay -->
+      <div class="position-absolute top-50 start-50 translate-middle text-above-overlay">
+        <div class="text-center">
+          <h1 class="text-uppercase title translatable">CONTACTO</h1>
+        </div>
+        <p class="subtitle-text text-forum text-center translatable">Av 4 Ote No. 3601<br>
+          Col. Sta Bárbara Nte<br>
+          Heroica Puebla de Zaragoza, Puebla, México<br>
+          C.P. 72013<br>
+          Teléfonos: +52 (222) 234 6289 / +52 (222) 947 5850
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="formulario-container">
+    <h2>Contacto</h2>
+    <textarea id="asunto" name="asunto" rows="4"  placeholder="Asunto" required></textarea>
+</div> -->
+
+  <!-- <div class="nombre-container">
+    <form id="miFormulario" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido">
+      <br>
+      <label for="direccion">Direccion:</label>
+      <input type="text" id="direccion" name="direccion">
+      <br>
+      <label for="empresa">Empresa:</label>
+      <input type="text" id="empresa" name="empresa">
+      <br>
+      <label for="codigo">Codigo Postal:</label>
+      <input type="text" id="codigo" name="codigo">
+      <br>
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad">
+      <br>
+      <label for="pais">Pais:</label>
+      <input type="text" id="pais" name="pais">
+      <br>
+      <label for="telefono">Telefono:</label>
+      <input type="text" id="telefono" name="telefono">
+      <br>
+      <label for="correo">Correo Electronico:</label>
+      <input type="text" id="correo" name="correo">
+      <br>
+        <button type="submit" onclick="validarFormulario()"  class="btn-center" id="enviarBtn">Enviar</button>
+      </form>
+  </div> -->
+  <div class="container ">
+    <h2>Contacto</h2>
+    <form id="miFormulario" method="post">
+      <div class="form-group">
+        <!-- <label for="nombre">Nombre:</label> -->
+        <input type="text" id="asunto" name="asunto" required placeholder="Asunto">
+      </div>
+      <div class="form-group">
+        <!-- <label for="nombre">Nombre:</label> -->
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <!-- <label for="apellido">Apellido:</label> -->
+        <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+      </div>
+      <div class="form-group">
+        <!-- <label for="direccion">Dirección:</label> -->
+        <input type="text" id="direccion" name="direccion" required placeholder="Dirección">
+      </div>
+      <div class="form-group">
+        <!-- <label for="empresa">Empresa:</label> -->
+        <input type="text" id="empresa" name="empresa" required placeholder="Empresa">
+      </div>
+      <div class="form-group">
+        <!-- <label for="codigo_postal">Código Postal:</label> -->
+        <input type="text" id="codigo" name="codigo" required placeholder="Código postal">
+      </div>
+      <div class="form-group">
+        <!-- <label for="ciudad">Ciudad:</label> -->
+        <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad">
+      </div>
+      <div class="form-group">
+        <!-- <label for="pais">País:</label> -->
+        <input type="text" id="pais" name="pais" required placeholder="País">
+      </div>
+      <div class="form-group">
+        <!-- <label for="telefono">Teléfono:</label> -->
+        <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono">
+      </div>
+      <div class="form-group">
+        <!-- <label for="correo">Correo Electrónico:</label> -->
+        <input type="email" id="correo" name="correo" required placeholder="Correo electrónico">
+      </div>
+      <div class="centrar-div d-grid gap-2">
+        <!-- <input type="submit" value="Enviar" onclick="validarFormulario()" id="enviarBtn"> -->
+        <button type="submit" onclick="validarFormulario()" class="btn  btn-outline-primary"
+          id="enviarBtn">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="bg-yellow centrar-div" id="contactInfo"></div>
+
+  <div id="footer"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+    integrity="sha384-9SNQ9aaM8eCv60vZ3Zke8d4T9n7f2fumjD6hP6EkHXCuQLU/G/yBKFO1dGRR95jZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+
+  <script src="../js/translate.js"></script>
+  <script src="../js/sendEmail.js"></script>
+  <script src="../js/validator.js"></script>
+  <script src="../js/dropdown.js"></script>
+  <script src="../js/visible.js"></script>
+  <script src="../js/reload.js"></script>
+  <script src="../js/loader.js"></script>
+</body>
+
+</html>
