@@ -1,179 +1,186 @@
 .title2 {
-    margin-top: 50px;
-    font-size: 70px;
-    text-align: center;
-    color: white;
-    font-family: 'Lalezar', system-ui;
-    letter-spacing: 5px;
+  margin-top: 50px;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  font-family: 'Lalezar', system-ui;
+  letter-spacing: 5px;
+}
+
+.bgcolor {
+  width: 90%;
+}
+
+.title3 {
+  margin-top: 50px;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  /* font-family: 'Lalezar', system-ui; */
+
+}
+
+.subtitle-text2 {
+  /* font-size: 20; */
+  color: white;
+  font-size: 119px;
+
+}
+
+.img-properties {
+  max-width: 1112px;
+  height: auto;
+  /* margin-left: 10%; */
+  margin-bottom: 10%;
+}
+
+@media (min-width: 300px) {
+  .img-properties {
+    max-width: 100%;
+    height: 250px;
+    /* margin-left: 15px; */
   }
+}
 
-  .title3 {
-    color: black;
-    font-size: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 55px;
-    
+@media (min-width: 992px) {
+  .img-properties {
+    width: 1112px;
+    height: 584px;
+    margin-left: 11%;
   }
+}
 
-  .subtitle-text2 {
-    /* font-size: 20; */
-    color: white;
-    font-size: 19px;
-
-  }
-
+@media (min-width: 1200px) {
   .img-properties {
     max-width: 1112px;
-    height: auto;
-    margin-left: 10%;
-    margin-bottom: 10%;
+    height: 584px;
+    margin-left: 11%;
   }
+}
 
-  @media (min-width: 300px) {
-    .img-properties {
-      max-width: 100%;
-      height: 250px;
-      margin-left: 15px;
-    }
-  }
+/* Estilo base para el texto */
+.text-forum {
+  font-size: 13px;
+  margin-bottom: 25px;
+  /* Tamaño de fuente para pantallas pequeñas */
+}
 
-  @media (min-width: 992px) {
-    .img-properties {
-      width: 1112px;
-      height: 584px;
-      margin-left: 11%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .img-properties {
-      max-width: 1112px;
-      height: 584px;
-      margin-left: 11%;
-    }
-  }
-
-  /* Estilo base para el texto */
+/* Ajustes para pantallas más grandes */
+@media (min-width: 576px) {
   .text-forum {
-    font-size: 13px;
-    margin-bottom: 25px;
-    /* Tamaño de fuente para pantallas pequeñas */
-  }
-
-  /* Ajustes para pantallas más grandes */
-  @media (min-width: 576px) {
-    .text-forum {
-      font-size: 18px;
-      /* Tamaño de fuente para pantallas medianas */
-    }
-  }
-
-  @media (min-width: 768px) {
-    .text-forum {
-      font-size: 20px;
-      /* Tamaño de fuente para pantallas grandes */
-    }
-  }
-
-  @media (min-width: 992px) {
-    .text-forum {
-      font-size: 22px;
-      /* Tamaño de fuente para pantallas extra grandes */
-    }
-  }
-
-  .title2 {
-    font-size: 24px;
-    /* Tamaño de fuente para pantallas pequeñas y móviles */
-  }
-
-  @media (min-width: 768px) {
-    .title2 {
-      font-size: 28px;
-      /* Tamaño de fuente para pantallas medianas */
-    }
-  }
-
-  @media (min-width: 992px) {
-    .title2 {
-      font-size: 32px;
-      /* Tamaño de fuente para pantallas grandes */
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .title2 {
-      font-size: 56px;
-      /* Tamaño de fuente para pantallas extra grandes */
-    }
-  }
-
-  .title2 {
-    font-size: 24px;
-    /* Tamaño de fuente para pantallas pequeñas y móviles */
-  }
-
-  @media (min-width: 768px) {
-    .title2 {
-      font-size: 28px;
-      /* Tamaño de fuente para pantallas medianas */
-    }
-  }
-
-  @media (min-width: 992px) {
-    .title2 {
-      font-size: 32px;
-      /* Tamaño de fuente para pantallas grandes */
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .title2 {
-      font-size: 56px;
-      /* Tamaño de fuente para pantallas extra grandes */
-    }
-  }
-
-  .title3 {
     font-size: 18px;
-    /* Tamaño de fuente para pantallas pequeñas y móviles */
+    /* Tamaño de fuente para pantallas medianas */
   }
+}
 
-  @media (min-width: 768px) {
-    .title3 {
-      font-size: 12px;
-      /* Tamaño de fuente para pantallas medianas */
-    }
+@media (min-width: 768px) {
+  .text-forum {
+    font-size: 20px;
+    /* Tamaño de fuente para pantallas grandes */
   }
+}
 
-  @media (min-width: 992px) {
-    .title3 {
-      font-size: 18px;
-      /* Tamaño de fuente para pantallas grandes */
-    }
+@media (min-width: 992px) {
+  .text-forum {
+    font-size: 22px;
+    /* Tamaño de fuente para pantallas extra grandes */
   }
+}
 
-  @media (min-width: 1200px) {
-    .title3 {
-      font-size: 26px;
-      /* Tamaño de fuente para pantallas extra grandes */
-    }
+.title2 {
+  font-size: 24px;
+  /* Tamaño de fuente para pantallas pequeñas y móviles */
+}
+
+@media (min-width: 768px) {
+  .title2 {
+    font-size: 28px;
+    /* Tamaño de fuente para pantallas medianas */
   }
+}
 
+@media (min-width: 992px) {
+  .title2 {
+    font-size: 32px;
+    /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (min-width: 1200px) {
+  .title2 {
+    margin-top: -5%;
+    font-size: 56px;
+    /* Tamaño de fuente para pantallas extra grandes */
+  }
+}
+
+@media (min-width: 768px) {
+  .title2 {
+    font-size: 28px;
+    /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (min-width: 992px) {
+  .title2 {
+    font-size: 32px;
+    /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (min-width: 1200px) {
+  .title2 {
+    font-size: 56px;
+    /* Tamaño de fuente para pantallas extra grandes */
+  }
+}
+
+@media (min-width: 400px) {
+  .title3 {
+    text-align: justify;
+    font-size: 13px;
+    margin-top: -5px;
+    /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (min-width: 768px) {
+  .title3 {
+    font-size: 10px;
+    text-align: justify;
+    /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (min-width: 992px) {
+  .title3 {
+    text-align: justify;
+    font-size: 18px;
+    /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (min-width: 1200px) {
+  .title3 {
+    text-align: justify;
+    font-size: 36px;
+    /* Tamaño de fuente para pantallas extra grandes */
+  }
+}
+
+.col-wrapper {
+  display: flex;
+}
+
+.margins {
+  margin-right: 15px;
+  margin-left: 50px;
+  margin-bottom: 25%;
+  line-height: 2rem;
+}
+
+@media(max-width:580px) {
   .col-wrapper {
-    display: flex;
+    display: block;
   }
-
-  .margins {
-    margin-right: 15px;
-    margin-left: 50px;
-    margin-bottom: 25%;
-    line-height: 2rem;
-  }
-
-  @media(max-width:580px) {
-    .col-wrapper {
-      display: block;
-    }
-  }
+}
